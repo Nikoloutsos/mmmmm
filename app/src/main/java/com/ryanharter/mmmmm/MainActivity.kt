@@ -70,9 +70,8 @@ class MainActivity : AppCompatActivity() {
       Toast.makeText(this, flavor.name, Toast.LENGTH_SHORT).show()
     }
     holeButton.setOnClickListener {
-      val value = !donut.isHole
-      donut.isHole = value
-      holeButton.text = if (value) "Hole" else "Whole"
+      donut.isRotate = true;
+
     }
     animateButton.setOnClickListener {
       val animator = animator
